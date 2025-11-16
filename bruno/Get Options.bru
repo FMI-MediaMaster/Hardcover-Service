@@ -1,0 +1,20 @@
+meta {
+  name: Get Options
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url}}/options?name=Lord of the rings
+  body: none
+  auth: inherit
+}
+
+params:query {
+  name: Lord of the rings
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

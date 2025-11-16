@@ -1,10 +1,8 @@
-import userController from '@controllers/user';
 import { Router } from 'express';
-import { createRouter } from '@media-master/express-crud-router';
+import hardcoverController from '@controllers/hardcover';
 
 const routes: Router = Router();
 
-routes.use('/users', createRouter(userController));
+routes.get('/:method', hardcoverController.handler);
 
 export default routes;
-
