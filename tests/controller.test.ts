@@ -14,6 +14,7 @@ describe('Controller', () => {
     };
     const invalidMap: object = {
         'adasdasa': '-1',
+        '': 'nothing',
         'nonExistentBook': 'nonExistentId',
     };
     const fieldsMap: Record<string, Fields> = {

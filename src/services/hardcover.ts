@@ -45,6 +45,8 @@ export default class HardcoverService {
     };
 
     private getOptions = async (name: string): Promise<BookOption[]> => {
+        if (!name) return [];
+
         const query = `
             query {
                 search(
